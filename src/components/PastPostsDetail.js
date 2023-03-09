@@ -13,7 +13,7 @@ export default function PastPostsDetail(props) {
         <div className="indv-post" key={post.id}>
           <div>
             <span className="indv-title">{post.title}</span>
-            <span className="indv-date">{}</span>
+            <span className="indv-date">{moment(post.timestamp).format("MMM Do YY")}</span>
           </div>
           <div>{post.text}</div>
           <div className="idv-buttons-container">

@@ -1,0 +1,1 @@
+export const MAIN_URL = "https://us-central1-mbtcandidate.cloudfunctions.net/posts/nholtan"

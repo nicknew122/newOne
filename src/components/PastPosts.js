@@ -1,4 +1,5 @@
 import React from 'react'
+import moment from 'moment'
 
 const PastPosts = (props) => {
   console.log(props.allPosts)
@@ -11,7 +12,7 @@ const PastPosts = (props) => {
       {props.allPosts.map((post, idx) => (
         <div key={post.id}>
           <div className='past-posts-meta-data'>
-            <span>{post.timestamp}</span>
+            <span>{moment(post.timestamp).format("MMM DD YYYY")}</span>
             <span>{post.title}</span>
           </div>
         </div>

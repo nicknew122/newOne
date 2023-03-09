@@ -1,4 +1,6 @@
 import React from "react";
+import moment from "moment";
+moment().format("MMM Do YY"); 
 
 export default function PastPostsDetail(props) {
 
@@ -11,7 +13,7 @@ export default function PastPostsDetail(props) {
         <div className="indv-post" key={post.id}>
           <div>
             <span className="indv-title">{post.title}</span>
-            <span className="indv-date">{post.timestamp}</span>
+            <span className="indv-date">{}</span>
           </div>
           <div>{post.text}</div>
           <div className="idv-buttons-container">
